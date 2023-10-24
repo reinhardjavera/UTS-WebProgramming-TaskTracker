@@ -1,0 +1,138 @@
+/* Login and Registration Form */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#failLogin {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+#unmatchedPass {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+#successRegister {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+.body-login-register {
+  background: #1f2983;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app-title {
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-top: -50px;
+  margin-bottom: 60px;
+}
+
+.form-bg {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form-horizontal {
+  background: #fff;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+.form-horizontal .heading {
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 35px 0;
+  border-bottom: 1px solid #b1b1b1;
+  margin-bottom: 30px;
+}
+.form-horizontal .form-group {
+  padding: 0 35px;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.form-horizontal .form-group p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form-horizontal .form-control {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 0 20px 0 45px;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control:focus {
+  background: #e0e0e0;
+  box-shadow: none;
+  outline: 0 none;
+}
+.form-horizontal .form-group i {
+  position: absolute;
+  top: 12px;
+  left: 60px;
+  font-size: 17px;
+  color: #c8c8c8;
+  transition: all 0.5s ease 0s;
+}
+.form-horizontal .form-control:focus + i {
+  color: #00b4ef;
+}
+
+.form-horizontal .btn {
+  float: center;
+  font-size: 14px;
+  color: #fff;
+  background: #a15c23;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+}
+
+.form-horizontal .btn:hover {
+  background: #7a4e13;
+}
+
+@media only screen and (max-width: 479px) {
+  .form-horizontal .form-group {
+    padding: 0 25px;
+  }
+  .form-horizontal .form-group i {
+    left: 45px;
+  }
+  .form-horizontal .btn {
+    padding: 10px 20px;
+  }
+}
+
+/* End Login and Registration Form */
